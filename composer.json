@@ -1,0 +1,43 @@
+{
+    "name": "codicastudio/global-settings",
+    "description": "A noobs worthless garbage, just learning.",
+    "keywords": [
+        "worthless garabage by a noob."
+    ],
+    "homepage": "https://github.com/codicastudio/global-settings",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael J Brown",
+            "email": "codicastudiodev@gmail.com",
+            "homepage": "https://codicastudio.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.8"
+    },
+    "autoload": {
+        "files": [
+            "helpers.php"
+        ],
+        "psr-4": {
+            "codicastudio\\NovaSettingsTool\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "codicastudio\\NovaSettingsTool\\ToolServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true
+}
